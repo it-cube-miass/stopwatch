@@ -2,6 +2,7 @@ package dev.haschish.stopwatch;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,5 +30,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setSeconds(7);
+    }
+
+    public void onClickStart (View v) {
+        setSeconds(++seconds);
+    }
+
+    public void onClickStop (View v) {
+
+    }
+
+    public void onClickReset (View v) {
+
     }
 }
